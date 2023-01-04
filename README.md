@@ -1,6 +1,7 @@
 # Image SEO Optimization
 ## This python script helps optimize images for search engines by renaming and updating the alt text of images in a given directory.
 
+![Image SEO Optimizer Starmorph](https://i.imgur.com/px4LHGI.png)
 Created by [Starmorph Web Design](https://starmorph.com)
 
 ## Features
@@ -13,7 +14,6 @@ Created by [Starmorph Web Design](https://starmorph.com)
 To use the script, call the `rename_images` function with the following arguments:
 
 ```
-python
 rename_images(directory, new_filename, alt_keyword)
 ```
 `directory` is the path to the directory containing the images to be renamed and optimized.
