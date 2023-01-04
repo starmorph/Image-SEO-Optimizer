@@ -1,6 +1,8 @@
 # Image SEO Optimization
 ## This python script helps optimize images for search engines by renaming and updating the alt text of images in a given directory.
 
+Created by [Starmorph Web Design](https://starmorph.com)
+
 ## Features
 
 - Renames all images in a given directory with a specified new filename and a counter.
@@ -10,9 +12,11 @@
 
 To use the script, call the `rename_images` function with the following arguments:
 
-`python`
+```
+python
 rename_images(directory, new_filename, alt_keyword)
-directory is the path to the directory containing the images to be renamed and optimized.
+```
+`directory` is the path to the directory containing the images to be renamed and optimized.
 
 `new_filename` is the new base filename to be used for the images. The counter will be appended to the end of the filename for each image.
 
@@ -20,8 +24,9 @@ directory is the path to the directory containing the images to be renamed and o
 
 For example, the following call will rename and optimize the images in the current directory:
 
-Copy code
+```
 rename_images('./', '3d-abstract-book', 'alt_keyword')
+```
 
 ## Supported Image Formats
 The script currently supports .jpg, .png, and .webp image formats.
