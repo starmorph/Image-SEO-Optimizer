@@ -1,5 +1,5 @@
 # Image SEO Optimization
-## This python script helps optimize images for search engines by renaming and updating the alt text of images in a given directory.
+## This python script helps optimize images for search engines by renaming all images in a given directory.
 
 ![Image SEO Optimizer Starmorph](https://i.imgur.com/px4LHGI.png)
 Created by [Starmorph Web Design](https://starmorph.com)
