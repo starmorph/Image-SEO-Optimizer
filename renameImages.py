@@ -1,7 +1,7 @@
 import os
 from PIL import Image
 imagetype = ".webp"
-def rename_images(directory, new_filename, alt_keyword):
+def rename_images(directory, new_filename):
     # get a list of all the image filenames in the directory
     image_filenames = [f for f in os.listdir(directory) if f.endswith('.jpg') or f.endswith('.png') or f.endswith('.webp')]
 
@@ -10,13 +10,10 @@ def rename_images(directory, new_filename, alt_keyword):
         # construct the new filename with the counter
         new_filename_with_counter = f"{new_filename}_{i+1}"
 
-        # rename the image file
-        os.rename(os.path.join(directory, filename), os.path.join(directory, new_filename_with_counter + imagetype))
-
-        # open the image and update the alt text
-        with Image.open(os.path.join(directory, new_filename_with_counter + imagetype)) as img:
-            img.show()
-            img.close()
+        # check if the new filename already exists
+        if not os.path.exists(os.path.join(directory, new_filename_with_counter + imagetype)):
+            # rename the image file
+            os.rename(os.path.join(directory, filename), os.path.join(directory, new_filename_with_counter + imagetype))
 
 # example usage
-rename_images('./', '3d-abstract-book', 'alt_keyword')
+rename_images('./', 'crown-new')
